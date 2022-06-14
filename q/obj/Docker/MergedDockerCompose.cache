@@ -1,0 +1,16 @@
+services:
+  authenticationservice:
+    build:
+      context: /Users/joeri/Repositories/q
+      dockerfile: AuthenticationService/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: authenticationservice
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - /Users/joeri/.aspnet/https:/root/.aspnet/https:ro
+    - /Users/joeri/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

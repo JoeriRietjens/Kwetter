@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.21
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KweetServiceCorrupt", "kwetter-backend\KweetServiceCorrupt.csproj", "{4EAA8559-58C0-4979-99C0-805DD8ED56F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationService", "AuthenticationService\AuthenticationService.csproj", "{DF6CED80-D75D-42F1-9F2A-478CA41777F8}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{54AC0BEE-9FAF-4E97-A8C9-B446EBFE9888}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KweetService", "KweetService\KweetService.csproj", "{BBB77861-65CC-47D3-BD89-DD829EC8C900}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EAA8559-58C0-4979-99C0-805DD8ED56F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EAA8559-58C0-4979-99C0-805DD8ED56F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EAA8559-58C0-4979-99C0-805DD8ED56F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EAA8559-58C0-4979-99C0-805DD8ED56F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF6CED80-D75D-42F1-9F2A-478CA41777F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF6CED80-D75D-42F1-9F2A-478CA41777F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF6CED80-D75D-42F1-9F2A-478CA41777F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF6CED80-D75D-42F1-9F2A-478CA41777F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54AC0BEE-9FAF-4E97-A8C9-B446EBFE9888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54AC0BEE-9FAF-4E97-A8C9-B446EBFE9888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54AC0BEE-9FAF-4E97-A8C9-B446EBFE9888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54AC0BEE-9FAF-4E97-A8C9-B446EBFE9888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBB77861-65CC-47D3-BD89-DD829EC8C900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBB77861-65CC-47D3-BD89-DD829EC8C900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBB77861-65CC-47D3-BD89-DD829EC8C900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBB77861-65CC-47D3-BD89-DD829EC8C900}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {919497B8-305F-4BF8-B0CF-A85C94A1350A}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal
