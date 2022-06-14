@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kweetservice
+spec:
+  containers:
+    - image: docker.io/jrietjens/kweetservice
+      name: kweetservice
+      imagePullPolicy: Always
+      resources: {}
+      ports:
+        - containerPort: 8080

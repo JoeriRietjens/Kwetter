@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "RnnmKz3dBGEGg3sljQ4S06ysGeWUcfn0BoT67bkXD8eyaERVrEin+lOsmAUCC3Ngg5tsC+rSVKxjqb1nxBp1Ww==",
+  "success": true,
+  "projectFilePath": "/Users/joeri/Repositories/Kwetter/q/KweetService/KweetService.csproj",
+  "expectedPackageFiles": [
+    "/Users/joeri/.nuget/packages/microsoft.netcore.app.ref/5.0.0/microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "/Users/joeri/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "/Users/joeri/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.16/microsoft.netcore.app.host.osx-x64.5.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}

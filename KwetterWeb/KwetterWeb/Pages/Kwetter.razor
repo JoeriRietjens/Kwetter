@@ -1,0 +1,37 @@
+@page "/Kweet"
+@using System.Runtime.CompilerServices
+@inject HttpClient Http
+<PageTitle>Kwetter</PageTitle>
+<h3>Kweet</h3>
+
+<div>
+    <EditForm Model="@Request" OnValidSubmit="@HandleValidSubmit">
+        <DataAnnotationsValidator/>
+        <ValidationSummary/>
+        
+        <InputText id="name" @bind-Value="Request.Message"/>
+        <button type="submit">Submit</button>
+    </EditForm>
+</div>
+
+@code {
+    private bool Succes = false;
+    private CreateKweetRequest Request = new();
+    
+    private async Task HandleValidSubmit()
+    {
+        Console.WriteLine(Request.Message);
+        var response = await Http.PostAsJsonAsync("api/Kweet",Request);
+        
+        if (response.IsSuccessStatusCode)
+        {
+            Succes = true;
+        }
+    }
+    
+    public class CreateKweetRequest
+    {
+        public string Message { get; set; }
+    }
+    
+}

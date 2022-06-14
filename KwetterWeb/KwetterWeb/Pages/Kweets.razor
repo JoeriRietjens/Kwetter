@@ -1,0 +1,35 @@
+@page "/Kweets"
+@using System.Net
+@inject HttpClient Http
+<h3>Kweets</h3>
+
+<table class="table">
+    <tbody>
+    @foreach (var x in kweets)
+            {
+                <tr>
+                    <td>@x.message</td>
+                </tr>
+            }
+    </tbody>
+</table>
+@code {
+    private Kweet[]? kweets;
+    protected override async Task OnInitializedAsync()
+    {
+        kweets = await Http.GetFromJsonAsync<Kweet[]>("api/Kweet/All");
+        Console.WriteLine(kweets);
+        foreach (var kweet in kweets)
+        {
+            Console.WriteLine(kweet.message);    
+        }
+    }
+    
+    public class Kweet
+    {
+       public Guid id { get; set; } 
+       public Guid profileId { get; set; }
+       public string message { get; set; } 
+       public DateTime dateOfCreation { get; set; } 
+    }
+}
